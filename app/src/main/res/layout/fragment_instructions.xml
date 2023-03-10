@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- In this layout there only 3 views with vertical orientation,
+     no columns, so linear layout is enough -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding"
+        tools:context=".InstructionsFragment">
+
+        <TextView
+            android:id="@+id/instructions_header_text"
+            style="@style/myHeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_large_margin"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:text="@string/instructions_header" />
+
+        <TextView
+            android:id="@+id/instructions_text"
+            style="@style/myMainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:text="@string/instructions" />
+
+        <Button
+            android:id="@+id/shoe_list_button"
+            style="@style/myButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shoe_list" />
+
+    </LinearLayout>
+
+</layout>

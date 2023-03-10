@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- In this layout I have used constraint layout only for labels sticking to the edit text views.
+    I think that linear layout is useful here too.-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/email_text"
+            style="@style/myLabel"
+            android:text="@string/email"
+            app:layout_constraintBottom_toTopOf="@+id/email_edit"
+            app:layout_constraintStart_toStartOf="@+id/email_edit" />
+
+        <EditText
+            android:id="@+id/email_edit"
+            style="@style/myEditText"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/drawable_text_padding"
+            android:hint="@string/email_edit_hint"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/password_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            style="@style/myEditText"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="@dimen/drawable_text_padding"
+            android:hint="@string/password_edit_hint"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="@+id/email_edit"
+            app:layout_constraintStart_toStartOf="@+id/email_edit"
+            app:layout_constraintTop_toBottomOf="@+id/email_edit" />
+
+        <Button
+            android:id="@+id/create_button"
+            style="@style/myButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/myButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            app:layout_constraintBottom_toTopOf="@id/create_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/password_text"
+            style="@style/myLabel"
+            android:text="@string/password"
+            app:layout_constraintBottom_toTopOf="@+id/password_edit"
+            app:layout_constraintStart_toStartOf="@+id/password_edit" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

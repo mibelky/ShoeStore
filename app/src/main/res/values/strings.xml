@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Shoe store</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_out_title">Log out</string>
+    <string name="fragment_login_label">Shoe store</string>
+    <string name="fragment_welcome_label">Welcome to our shoe store!</string>
+    <string name="fragment_instructions_label">Instructions</string>
+    <string name="fragment_shoe_list_label">Shoes</string>
+    <string name="fragment_shoe_detail_label">Add new shoes</string>
+    <string name="email">Email</string>
+    <string name="email_edit_hint">example@abc.com</string>
+    <string name="password">Password</string>
+    <string name="password_edit_hint">******</string>
+    <string name="create">Create</string>
+    <string name="log_in">Log in</string>
+    <string name="welcome">Hope you will enjoy our shoe store app.</string>
+    <string name="welcome_header">Welcome!</string>
+    <string name="instructions_button">Instructions</string>
+    <string name="instructions_header">Instructions</string>
+    <string name="instructions">On the next screen you could see all shoes in our store. By clicking on Add button you could add new pair of shoes with all proper information: brand, model name, size and additional description.</string>
+    <string name="shoe_list">Shoe list</string>
+    <string name="shoe_name">Shoe name</string>
+    <string name="shoe_name_edit_hint">Air Jordan</string>
+    <string name="brand">Brand</string>
+    <string name="brand_name_edit_hint">Nike</string>
+    <string name="size">Size</string>
+    <string name="size_edit_hint">9.0</string>
+    <string name="description">Description</string>
+    <string name="description_edit_hint">Basketball, etc.</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources>
